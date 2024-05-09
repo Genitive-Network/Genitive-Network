@@ -10,3 +10,6 @@
 [submodule "fhevm_js_server"]
 	path = fhevm_js_server
 	url = https://github.com/Genitive-Network/fhevm_js_server
+[submodule "bevm-io"]
+	path = bevm-io
+	url = https://github.com/Genitive-Network/bevm-io
