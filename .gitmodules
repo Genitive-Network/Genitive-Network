@@ -10,3 +10,6 @@
 [submodule "bevm-io"]
 	path = bevm-io
 	url = https://github.com/Genitive-Network/bevm-io
+[submodule "bevm-io"]
+	path = frontend
+	url = https://github.com/Genitive-Network/frontend
