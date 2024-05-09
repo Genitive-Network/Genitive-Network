@@ -1,3 +1,12 @@
 [submodule "frontend"]
 	path = frontend
 	url = https://github.com/Genitive-Network/frontend
+[submodule "Genitive"]
+	path = Genitive
+	url = https://github.com/Genitive-Network/Genitive
+[submodule "fhevm"]
+	path = fhevm
+	url = https://github.com/Genitive-Network/fhevm
+[submodule "fhevm_js_server"]
+	path = fhevm_js_server
+	url = https://github.com/Genitive-Network/fhevm_js_server
