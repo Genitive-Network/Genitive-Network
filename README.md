@@ -22,6 +22,29 @@ https://genitive-bridge.vercel.app/bridge
 ## Repo
 
 Repo includes:
+ - fhevm
+   - monitor bot
+   - crosschain server
+ - bevm
+ - frontend
+
+### fhevm
+ - Smart contracts in **fhevm\py_transfer_monitor\contracts**
+   - The contracts are based on the encrypted ERC20 contract code provided by ZAMA, with adjusted interface functions and added specific events, allowing for more accurate monitoring of on-chain data.
+   - Main methods and event
+     ```solidity
+     function transfer(address to, bytes calldata encryptedAmount) returns (bool) {...}
+     function balanceOf(address wallet, bytes32 publicKey, bytes calldata signature) view returns (bytes memory) {...}
+     function mint(uint64 amount, address to) {...}
+     event CrossChainTransfer(uint64 amount, address indexed from, address indexed to)
+     ```
+ - Monitor bot in **fhevm\py_transfer_monitor**
+   - Using Python scripts to monitor on-chain data, when valid cross-chain transactions are identified, requests will be sent to the BEVM server to perform cross-chain operations.
+ - crosschain server in **fhevm_js_server**
+   - Using an HTTP server to receive cross-chain requests to FHEVM.
+   - API：
+     - url: **http://hostname:port/api/mint**
+     - parameter：{"address":"0x000000000000000", "amount":123}
 
 Smart contracts in 
 (这个库实现了什么功能，然后提供了几个 public methods，分别是什么，什么用）
