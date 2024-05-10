@@ -48,15 +48,14 @@ Repo includes:
 
 ### bevm
  
-- Monitor bot in **bevm monitor**
-  Use Bevm to implement back-end development, including monitoring data events on the blockchain and calling the Restful api to the fhEvm.
+- Monitor bot in **bevm monitor**. Use Bevm to implement back-end development, including monitoring data events on the blockchain and calling the Restful api to the fhEvm.
 
   Main functionalities:
   
   ```go
-  func Mint(address string, amount big.Int) error : mint tokens based on amount
-  func Burn(address string, amount decimal.Decimal) error: burn tokens based on amount
-  func Runbevm() : listen for the transfer events in the bvem blockchain
+  func Mint(address string, amount big.Int) error // mint tokens based on amount
+  func Burn(address string, amount decimal.Decimal) error // burn tokens based on amount
+  func Runbevm() // listen for the transfer events in the bvem blockchain
   ```
 
 ### frontend
