@@ -58,21 +58,14 @@ Repo includes:
   func Runbevm() // listen for the transfer events in the bvem blockchain
   ```
 
-### frontend
+### Frontend
 
+The frontend application of the bridge is built in Next.js and NextUI.
 
+This application uses the wagmi and ethers.js library, which is a set of utilities for interacting with EVM-compatible blockchains. It provides hooks and functions for account management, chain switching, and contract interacting, including making transactions and reading contract state.
 
-*** in ***
-(这个库实现了什么功能，然后提供了几个 public methods，分别是什么，什么用）
+Fhevmjs is used for interacting with the FHEVM. It provides functions like decrypt and encrypt, which are used to get the balance of a token (balanceOf) and transfer tokens (transfer). . This is different from other EVM chains.
 
-
-
-
-## UI
-
-UI signs/sends transaction using Metamask SDK.
-
-Contract calls are written in ***
 
 ## Contact information beyond Github:
 
