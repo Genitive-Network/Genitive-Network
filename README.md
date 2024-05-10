@@ -45,13 +45,24 @@ Repo includes:
    - API：
      - url: **http://hostname:port/api/mint**
      - parameter：{"address":"0x000000000000000", "amount":123}
+ 
+- Monitor bot in **bevm monitor**
+  Use Bevm to implement back-end development, including monitoring data events on the blockchain and calling the Restful api to the fhEvm.
 
-Smart contracts in 
-(这个库实现了什么功能，然后提供了几个 public methods，分别是什么，什么用）
+  Main functionalities:
+  
+  ```go
+  func Mint(address string, amount big.Int) error : mint tokens based on amount
+  func Burn(address string, amount decimal.Decimal) error: burn tokens based on amount
+  func Runbevm() : listen for the transfer events in the bvem blockchain
+  ```
+  
 
 *** in ***
 (这个库实现了什么功能，然后提供了几个 public methods，分别是什么，什么用）
-Use Bevm to implement back-end development, including monitoring data events on the blockchain and calling the fhEVM interface.
+
+
+
 
 *** in ***
 (这个库实现了什么功能，然后提供了几个 public methods，分别是什么，什么用）
