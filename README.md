@@ -60,11 +60,11 @@ Repo includes:
 
 ### Frontend
 
-The frontend application of the bridge is built in Next.js and NextUI.
+- The frontend application of the bridge is built in Next.js and NextUI.
 
-This application uses the wagmi and ethers.js library, which is a set of utilities for interacting with EVM-compatible blockchains. It provides hooks and functions for account management, chain switching, and contract interacting, including making transactions and reading contract state.
+- This application uses the wagmi and ethers.js library, which is a set of utilities for interacting with EVM-compatible blockchains. It provides hooks and functions for account management, chain switching, and contract interacting, including making transactions and reading contract state.
 
-Fhevmjs is used for interacting with the FHEVM. It provides functions like decrypt and encrypt, which are used to get the balance of a token (balanceOf) and transfer tokens (transfer). . This is different from other EVM chains.
+- Fhevmjs is used for interacting with the FHEVM. It provides functions like decrypt and encrypt, which are used to get the balance of a token (balanceOf) and transfer tokens (transfer). . This is different from other EVM chains.
 
 
 ## Contact information beyond Github:
